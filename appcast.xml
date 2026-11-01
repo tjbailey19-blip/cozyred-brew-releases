@@ -2,22 +2,5 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
     <title>Brew</title>
-    <item>
-      <title>Brew 0.6.1</title>
-      <pubDate>Sun, 01 Nov 2026 00:32:45 GMT</pubDate>
-      <sparkle:version>453</sparkle:version>
-      <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<h2>Brew 0.6.1</h2>
-<ul>
-  <li>Brew's panel in Premiere: pick a ready short or a beat, Make the cut, and the short lands in your timeline.</li>
-  <li>Brew asks for your invite code the first time it opens, next to your Claude key.</li>
-  <li>Brew updates itself: Check for Updates in the Brew menu, and a check once a day on its own.</li>
-  <li>Brew no longer writes inside its own app, so macOS keeps trusting it after you use it.</li>
-</ul>
-]]></description>
-      <enclosure url="https://github.com/tjbailey19-blip/cozyred-brew-releases/releases/download/v0.6.1/Brew-0.6.1.zip" length="535880021" type="application/octet-stream"
-        sparkle:edSignature="7wVZJJPH9dxYqvF27xt2wYzpSWf2QfhMPEghOkkviGhtaHwNqMUFxv7w9UfNWmvBX5SArGMcJ5bVCebAm/13Cg=="/>
-    </item>
   </channel>
 </rss>
