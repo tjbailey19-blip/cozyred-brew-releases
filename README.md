@@ -20,7 +20,7 @@ What Brew.app reads from the internet, and nothing else. No code lives here.
 
 **Uninstall.** Click the cup in the menu bar and choose Uninstall Brew…: Brew moves itself to the Trash, takes its panel out of Premiere and forgets your Claude key. Uninstall and Remove Projects deletes its data folder too.
 
-## Brew 0.6.2: notices
+## Brew 0.6.3: notices
 
 Brew's own code is Cozyred's. These other programs and libraries ship inside Brew.app, each under its own licence and each with its licence text beside it in the app (paths from Brew.app/Contents). None of them is under the GPL.
 
