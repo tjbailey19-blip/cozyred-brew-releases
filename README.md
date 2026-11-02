@@ -10,7 +10,7 @@ What Brew.app reads from the internet, and nothing else. No code lives here.
 
 **What Brew needs.** A Mac with Apple silicon, macOS 14 or later, Adobe Premiere Pro 25.6 or later, and 10 GB free. Creative Cloud signed in with the account that pays for your Premiere, so Premiere opens. An internet connection the first time Brew opens (it downloads the transcription model, about 1.6 GB, once) and whenever it reads a recording with Claude. Your recordings never leave your Mac; only the words of the transcript go to Anthropic, under the key you were given.
 
-**Two things you were sent.** With your invite you get an invite code and a Claude key, both from the person who invited you. Keep the message that holds them; the first screen asks for both. Paste each whole. Brew keeps the key in your Mac's Keychain and uses it only for your own requests; it is covered for you in the beta.
+**Two things you were sent.** Paste the Claude key and the invite code you were sent. Both came with your invite, from the person who invited you; keep the message that holds them, and paste each one whole when the first screen asks. Brew keeps the key in your Mac's Keychain and uses it only for your own requests; it is covered for you in the beta. If you have a Claude key of your own, it comes from console.anthropic.com.
 
 **Install.** Download the newest `Brew-<version>.zip` from this repository's Releases page, double-click it to unzip, drag Brew into your Applications folder, and open it from there (opened from Downloads, Brew asks to be moved first). macOS asks once whether to open an app downloaded from the internet. Brew has no window: a cup appears in the menu bar at the top right of the screen.
 
