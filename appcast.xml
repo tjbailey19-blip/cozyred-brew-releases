@@ -3,12 +3,12 @@
   <channel>
     <title>Brew</title>
     <item>
-      <title>Brew 0.6.4</title>
-      <pubDate>Mon, 02 Nov 2026 23:50:26 GMT</pubDate>
-      <sparkle:version>700</sparkle:version>
-      <sparkle:shortVersionString>0.6.4</sparkle:shortVersionString>
+      <title>Brew 0.6.5</title>
+      <pubDate>Tue, 03 Nov 2026 03:07:24 GMT</pubDate>
+      <sparkle:version>703</sparkle:version>
+      <sparkle:shortVersionString>0.6.5</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<h2>Brew 0.6.4</h2>
+      <description><![CDATA[<h2>Brew 0.6.5</h2>
 <p>Brew turns the raw footage of a recorded conversation into shorts, cut most of the way, and puts them in your Premiere timeline for you to finish. In Brew's panel inside Premiere you choose the episode folder; Brew lines up the cameras and mics, listens to them, finds the conversations and makes ready shorts. Click one to put it in your timeline, or pick a beat and press Make the cut.</p>
 
 <h3>What Brew needs</h3>
@@ -16,7 +16,7 @@
 
 <h3>Install</h3>
 <ol>
-<li>Download Brew-0.6.4.zip below and double-click it to unzip.</li>
+<li>Download Brew-0.6.5.zip below and double-click it to unzip.</li>
 <li>Drag Brew into your Applications folder and open it from there. macOS asks once whether to open an app downloaded from the internet. Brew has no window: a cup appears in the menu bar at the top right of your screen, and Brew's first screen opens in your browser.</li>
 <li>On that screen, paste the Claude key and the invite code you were sent, then press Keep.</li>
 <li>Open Premiere and a project, then Window &gt; UXP Plugins &gt; Brew. Press Choose your episode folder.</li>
@@ -31,7 +31,7 @@
 <h3>Uninstall</h3>
 <p>Click the cup in the menu bar and choose Uninstall Brew…: Brew moves itself to the Trash, takes its panel out of Premiere and forgets your Claude key. Uninstall and Remove Projects deletes its data folder too.</p>
 
-<h2>Brew 0.6.4: notices</h2>
+<h2>Brew 0.6.5: notices</h2>
 <p>Brew&#x27;s own code is Cozyred&#x27;s. These other programs and libraries ship inside Brew.app, each under its own licence and each with its licence text beside it in the app (paths from Brew.app/Contents). None of them is under the GPL.</p>
 <h3>FFmpeg 9.0.2, LGPL 2.1 or later</h3>
 <p>Resources/bin/ffmpeg and ffprobe, which Brew runs as separate programs. Built from FFmpeg&#x27;s own source with no GPL part (no --enable-gpl, no x264) and only macOS&#x27;s own frameworks. The source is the tarball Brew&#x27;s build pins: ffmpeg-9.0.2.tar.xz from https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz (SHA-256 8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e), configured with --disable-autodetect --enable-videotoolbox --enable-audiotoolbox --enable-zlib --enable-bzlib --disable-doc --disable-ffplay --disable-network --disable-debug. If you want that source and cannot download it there, open an issue at https://github.com/tjbailey19-blip/cozyred-brew-releases/issues and it will be sent to you, for three years from this release. Its licence texts are in Resources/licenses/FFmpeg (COPYING.LGPLv2.1, LICENSE.md).</p>
@@ -157,8 +157,8 @@
 <tr><td>yt-dlp</td><td>2026.10.21</td><td>Unlicense</td></tr>
 </table>
 ]]></description>
-      <enclosure url="https://github.com/tjbailey19-blip/cozyred-brew-releases/releases/download/v0.6.4/Brew-0.6.4.zip" length="536003105" type="application/octet-stream"
-        sparkle:edSignature="TH0IKhmID80OcVNME4A+rCFCGWfmj3om7xGwzGfcDxijuPy2mGS6AyabLBePaiodP1AlAHadr9lGXKBPyaEHBA=="/>
+      <enclosure url="https://github.com/tjbailey19-blip/cozyred-brew-releases/releases/download/v0.6.5/Brew-0.6.5.zip" length="536002613" type="application/octet-stream"
+        sparkle:edSignature="AdfDySBoPAA7Q8f0+PmXTVXw7BM73YXSAX7oJP7iy5XHcbvf1R1V3mksgmdpCaB0qWZpJs/E7L6mPUW03DycDQ=="/>
     </item>
   </channel>
 </rss>

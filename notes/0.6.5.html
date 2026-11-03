@@ -1,0 +1,148 @@
+<h2>Brew 0.6.5</h2>
+<p>Brew turns the raw footage of a recorded conversation into shorts, cut most of the way, and puts them in your Premiere timeline for you to finish. In Brew's panel inside Premiere you choose the episode folder; Brew lines up the cameras and mics, listens to them, finds the conversations and makes ready shorts. Click one to put it in your timeline, or pick a beat and press Make the cut.</p>
+
+<h3>What Brew needs</h3>
+<p>A Mac with Apple silicon, macOS 14 or later, Adobe Premiere Pro 25.6 or later, and 10 GB free. An internet connection the first time it opens (it downloads the transcription model once) and whenever it reads an episode with Claude.</p>
+
+<h3>Install</h3>
+<ol>
+<li>Download Brew-0.6.5.zip below and double-click it to unzip.</li>
+<li>Drag Brew into your Applications folder and open it from there. macOS asks once whether to open an app downloaded from the internet. Brew has no window: a cup appears in the menu bar at the top right of your screen, and Brew's first screen opens in your browser.</li>
+<li>On that screen, paste the Claude key and the invite code you were sent, then press Keep.</li>
+<li>Open Premiere and a project, then Window &gt; UXP Plugins &gt; Brew. Press Choose your episode folder.</li>
+</ol>
+
+<h3>The Claude key and the invite code</h3>
+<p>Paste the Claude key and the invite code you were sent. Both came with your invite; paste each one whole. Brew keeps the key in your Mac's Keychain and uses it only for your own requests. If you have a Claude key of your own, it comes from console.anthropic.com (it starts with sk-ant-).</p>
+
+<h3>What leaves your Mac</h3>
+<p>Your footage, audio and frames never leave your Mac: only the words of the transcript go to Anthropic, under your own key, and the whole list of what Brew sends and to whom is TRUST.md inside Brew.app, beside NOTICES.txt (in Applications, right-click Brew, Show Package Contents, then Contents, Resources).</p>
+
+<h3>Uninstall</h3>
+<p>Click the cup in the menu bar and choose Uninstall Brew…: Brew moves itself to the Trash, takes its panel out of Premiere and forgets your Claude key. Uninstall and Remove Projects deletes its data folder too.</p>
+
+<h2>Brew 0.6.5: notices</h2>
+<p>Brew&#x27;s own code is Cozyred&#x27;s. These other programs and libraries ship inside Brew.app, each under its own licence and each with its licence text beside it in the app (paths from Brew.app/Contents). None of them is under the GPL.</p>
+<h3>FFmpeg 9.0.2, LGPL 2.1 or later</h3>
+<p>Resources/bin/ffmpeg and ffprobe, which Brew runs as separate programs. Built from FFmpeg&#x27;s own source with no GPL part (no --enable-gpl, no x264) and only macOS&#x27;s own frameworks. The source is the tarball Brew&#x27;s build pins: ffmpeg-9.0.2.tar.xz from https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz (SHA-256 8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e), configured with --disable-autodetect --enable-videotoolbox --enable-audiotoolbox --enable-zlib --enable-bzlib --disable-doc --disable-ffplay --disable-network --disable-debug. If you want that source and cannot download it there, open an issue at https://github.com/tjbailey19-blip/cozyred-brew-releases/issues and it will be sent to you, for three years from this release. Its licence texts are in Resources/licenses/FFmpeg (COPYING.LGPLv2.1, LICENSE.md).</p>
+<h3>soxr 1.1.0, LGPL 2.1 or later</h3>
+<p>The python-soxr package, with the libsoxr resampler inside it, in Resources/python/lib/python3.11/site-packages/soxr; its licence texts are in Resources/python/lib/python3.11/site-packages/soxr-1.1.0.dist-info/licenses (COPYING.LGPL, LICENSE-libsoxr.txt, LICENSE-PFFFT.txt). Its source is at https://github.com/dofuuz/python-soxr (the same version), libsoxr&#x27;s with it; the same offer as FFmpeg&#x27;s applies.</p>
+<h3>OpenCV 4.14.0.94, Apache License 2.0</h3>
+<p>The opencv-python-headless package, built by Brew from the package&#x27;s own source (opencv_python_headless-4.14.0.94.tar.gz, SHA-256 4afa2ea1214453648be88259f035712454faa9039b686de7753569ba8eec1577) with only the modules Brew uses (core, imgproc, imgcodecs, objdetect, the Python bindings) and none of the video libraries PyPI&#x27;s wheels carry (which include GPL ones). Its licence texts are in Resources/python/lib/python3.11/site-packages/opencv_python_headless-4.14.0.94.dist-info (LICENSE.txt, LICENSE-3RD-PARTY.txt).</p>
+<h3>Sparkle 2.10.0, MIT</h3>
+<p>Frameworks/Sparkle.framework, the updater; its licence text is in Resources/licenses/Sparkle/LICENSE.</p>
+<h3>Python 3.11.17, PSF License 2.0</h3>
+<p>Resources/python, python-build-standalone&#x27;s build (release 20261013); its licence text, with those of the libraries it bundles, is Resources/python/lib/python3.11/LICENSE.txt.</p>
+<h3>Every Python package in Brew</h3>
+<p>From backend/requirements.lock, each at the version named, each with its own licence text in its .dist-info folder under Resources/python/lib/python3.11/site-packages:</p>
+<table><tr><th>package</th><th>version</th><th>licence</th></tr>
+<tr><td>aiohappyeyeballs</td><td>2.7.1</td><td>PSF-2.0</td></tr>
+<tr><td>aiohttp</td><td>3.14.5</td><td>Apache-2.0 AND MIT</td></tr>
+<tr><td>aiosignal</td><td>1.4.0</td><td>Apache-2.0</td></tr>
+<tr><td>annotated-doc</td><td>0.0.5</td><td>MIT</td></tr>
+<tr><td>annotated-types</td><td>0.8.0</td><td>MIT</td></tr>
+<tr><td>anthropic</td><td>2.3.0</td><td>Apache-2.0</td></tr>
+<tr><td>anyio</td><td>4.15.1</td><td>MIT</td></tr>
+<tr><td>attrs</td><td>26.1.0</td><td>MIT</td></tr>
+<tr><td>audioread</td><td>3.1.0</td><td>MIT</td></tr>
+<tr><td>cbor2</td><td>6.1.5</td><td>MIT</td></tr>
+<tr><td>certifi</td><td>2026.7.22</td><td>MPL-2.0</td></tr>
+<tr><td>cffi</td><td>2.1.1</td><td>MIT-0</td></tr>
+<tr><td>charset-normalizer</td><td>3.5.2</td><td>MIT</td></tr>
+<tr><td>click</td><td>8.5.0</td><td>BSD-3-Clause</td></tr>
+<tr><td>cloudpickle</td><td>3.1.2</td><td>BSD-3-Clause</td></tr>
+<tr><td>cryptography</td><td>50.0.2</td><td>Apache-2.0 OR BSD-3-Clause</td></tr>
+<tr><td>decorator</td><td>5.3.1</td><td>BSD-2-Clause</td></tr>
+<tr><td>docstring_parser</td><td>0.18.0</td><td>MIT</td></tr>
+<tr><td>fastapi</td><td>0.143.0</td><td>MIT</td></tr>
+<tr><td>filelock</td><td>4.1.1</td><td>MIT</td></tr>
+<tr><td>frozenlist</td><td>1.8.0</td><td>Apache-2.0</td></tr>
+<tr><td>fsspec</td><td>2026.9.0</td><td>BSD-3-Clause</td></tr>
+<tr><td>grpclib</td><td>0.4.9</td><td>BSD-3-Clause</td></tr>
+<tr><td>h11</td><td>0.16.0</td><td>MIT</td></tr>
+<tr><td>h2</td><td>4.4.1</td><td>MIT</td></tr>
+<tr><td>hf-xet</td><td>1.7.0</td><td>Apache-2.0</td></tr>
+<tr><td>hpack</td><td>4.2.0</td><td>MIT</td></tr>
+<tr><td>httpcore2</td><td>2.13.1</td><td>BSD-3-Clause</td></tr>
+<tr><td>httptools</td><td>0.9.0</td><td>MIT</td></tr>
+<tr><td>httpx2</td><td>2.13.1</td><td>BSD-3-Clause</td></tr>
+<tr><td>huggingface_hub</td><td>2.2.0</td><td>Apache-2.0</td></tr>
+<tr><td>hyperframe</td><td>6.1.0</td><td>MIT</td></tr>
+<tr><td>idna</td><td>3.20</td><td>BSD-3-Clause</td></tr>
+<tr><td>Jinja2</td><td>3.1.6</td><td>BSD</td></tr>
+<tr><td>jiter</td><td>0.18.0</td><td>MIT</td></tr>
+<tr><td>joblib</td><td>1.6.0</td><td>BSD-3-Clause</td></tr>
+<tr><td>lazy-loader</td><td>0.6</td><td>BSD-3-Clause</td></tr>
+<tr><td>librosa</td><td>0.11.0</td><td>ISC</td></tr>
+<tr><td>llvmlite</td><td>0.50.0</td><td>BSD-2-Clause AND Apache-2.0 WITH LLVM-exception</td></tr>
+<tr><td>markdown-it-py</td><td>4.2.0</td><td>MIT</td></tr>
+<tr><td>MarkupSafe</td><td>3.0.4</td><td>BSD-3-Clause</td></tr>
+<tr><td>mdurl</td><td>0.1.2</td><td>MIT</td></tr>
+<tr><td>mlx</td><td>0.32.3</td><td>MIT</td></tr>
+<tr><td>mlx-metal</td><td>0.32.3</td><td>MIT</td></tr>
+<tr><td>mlx-whisper</td><td>0.4.3</td><td>MIT</td></tr>
+<tr><td>modal</td><td>1.6.1</td><td>Apache-2.0</td></tr>
+<tr><td>more-itertools</td><td>11.1.0</td><td>MIT</td></tr>
+<tr><td>mpmath</td><td>1.3.0</td><td>BSD</td></tr>
+<tr><td>msgpack</td><td>1.2.3</td><td>Apache-2.0</td></tr>
+<tr><td>multidict</td><td>7.1.0</td><td>Apache-2.0</td></tr>
+<tr><td>mypy</td><td>1.18.2</td><td>MIT</td></tr>
+<tr><td>mypy_extensions</td><td>1.1.0</td><td>MIT</td></tr>
+<tr><td>narwhals</td><td>2.27.1</td><td>MIT</td></tr>
+<tr><td>networkx</td><td>3.6.1</td><td>BSD-3-Clause</td></tr>
+<tr><td>numba</td><td>0.68.0</td><td>BSD</td></tr>
+<tr><td>numpy</td><td>2.4.6</td><td>BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0</td></tr>
+<tr><td>opencv-python-headless</td><td>4.14.0.94</td><td>Apache-2.0</td></tr>
+<tr><td>opentelemetry-api</td><td>1.45.1</td><td>Apache-2.0</td></tr>
+<tr><td>OpenTimelineIO</td><td>0.18.1</td><td>Apache-2.0</td></tr>
+<tr><td>otio-cmx3600-adapter</td><td>1.0.0</td><td>Apache-2.0</td></tr>
+<tr><td>otio-fcp-adapter</td><td>1.0.0</td><td>Apache-2.0</td></tr>
+<tr><td>otio-fcpx-xml-adapter</td><td>1.0.0</td><td>Apache-2.0</td></tr>
+<tr><td>packaging</td><td>26.3</td><td>Apache-2.0 OR BSD-2-Clause</td></tr>
+<tr><td>pathspec</td><td>1.1.1</td><td>MPL-2.0</td></tr>
+<tr><td>platformdirs</td><td>4.13.0</td><td>MIT</td></tr>
+<tr><td>pooch</td><td>1.9.0</td><td>BSD-3-Clause</td></tr>
+<tr><td>propcache</td><td>0.5.4</td><td>Apache-2.0</td></tr>
+<tr><td>protobuf</td><td>7.36.2</td><td>BSD-3-Clause</td></tr>
+<tr><td>pyaaf2</td><td>1.7.1</td><td>MIT</td></tr>
+<tr><td>pycparser</td><td>3.11</td><td>BSD-3-Clause</td></tr>
+<tr><td>pydantic</td><td>2.14.1</td><td>MIT</td></tr>
+<tr><td>pydantic_core</td><td>2.50.1</td><td>MIT</td></tr>
+<tr><td>Pygments</td><td>2.21.0</td><td>BSD-2-Clause</td></tr>
+<tr><td>pyloudnorm</td><td>0.2.0</td><td>MIT</td></tr>
+<tr><td>python-dotenv</td><td>1.2.4</td><td>BSD-3-Clause</td></tr>
+<tr><td>PyYAML</td><td>6.0.3</td><td>MIT</td></tr>
+<tr><td>regex</td><td>2026.9.29</td><td>Apache-2.0 AND CNRI-Python</td></tr>
+<tr><td>requests</td><td>2.34.2</td><td>Apache-2.0</td></tr>
+<tr><td>rich</td><td>15.0.0</td><td>MIT</td></tr>
+<tr><td>ruff</td><td>0.13.3</td><td>MIT</td></tr>
+<tr><td>scenedetect</td><td>0.7.2</td><td>BSD-3-Clause</td></tr>
+<tr><td>scikit-learn</td><td>1.9.1</td><td>BSD-3-Clause</td></tr>
+<tr><td>scipy</td><td>1.17.1</td><td>BSD</td></tr>
+<tr><td>sherpa-onnx</td><td>1.13.8</td><td>Apache-2.0</td></tr>
+<tr><td>sherpa-onnx-core</td><td>1.13.8</td><td>Apache-2.0</td></tr>
+<tr><td>silero-vad</td><td>6.2.3</td><td>MIT</td></tr>
+<tr><td>sniffio</td><td>1.3.1</td><td>MIT OR Apache-2.0</td></tr>
+<tr><td>soundfile</td><td>0.14.0</td><td>BSD-3-Clause</td></tr>
+<tr><td>soxr</td><td>1.1.0</td><td>LGPL-2.1-or-later</td></tr>
+<tr><td>starlette</td><td>1.8.0</td><td>BSD-3-Clause</td></tr>
+<tr><td>sympy</td><td>1.14.0</td><td>BSD</td></tr>
+<tr><td>synchronicity</td><td>0.12.6</td><td>Apache-2.0</td></tr>
+<tr><td>threadpoolctl</td><td>3.7.0</td><td>BSD-3-Clause</td></tr>
+<tr><td>tiktoken</td><td>0.14.0</td><td>MIT</td></tr>
+<tr><td>toml</td><td>0.10.2</td><td>MIT</td></tr>
+<tr><td>torch</td><td>2.14.1</td><td>Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND MIT</td></tr>
+<tr><td>tqdm</td><td>4.70.1</td><td>MPL-2.0 AND MIT</td></tr>
+<tr><td>truststore</td><td>0.10.5</td><td>MIT</td></tr>
+<tr><td>types-certifi</td><td>2021.10.8.3</td><td>Apache-2.0</td></tr>
+<tr><td>types-toml</td><td>0.10.8.20260518</td><td>Apache-2.0</td></tr>
+<tr><td>typing-inspection</td><td>0.4.4</td><td>MIT</td></tr>
+<tr><td>typing_extensions</td><td>4.16.0</td><td>PSF-2.0</td></tr>
+<tr><td>urllib3</td><td>2.8.0</td><td>MIT</td></tr>
+<tr><td>uvicorn</td><td>0.54.0</td><td>BSD-3-Clause</td></tr>
+<tr><td>uvloop</td><td>0.23.0</td><td>MIT</td></tr>
+<tr><td>watchfiles</td><td>1.3.0</td><td>MIT</td></tr>
+<tr><td>websockets</td><td>17.2</td><td>BSD-3-Clause</td></tr>
+<tr><td>yarl</td><td>1.25.1</td><td>Apache-2.0</td></tr>
+<tr><td>yt-dlp</td><td>2026.10.21</td><td>Unlicense</td></tr>
+</table>
