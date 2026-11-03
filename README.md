@@ -18,11 +18,11 @@ What Brew.app reads from the internet, and nothing else. No code lives here.
 
 **Where the panel is.** Brew puts its own panel into Premiere Pro. Open Premiere and a project, then open the panel from Window → UXP Plugins → Brew. The first time it opens as a floating window; drag it beside your timeline, or leave it: after your first episode, with Premiere closed, Brew docks it beside the timeline for the next time.
 
-**In the panel.** Press Choose your episode folder and pick the folder with the episode's camera and mic files. Brew reads it and shows what it is doing, with the time left. When the ready shorts appear, click one to put it in your timeline; or pick a beat, type a length if you want one, and press Make the cut. Cut in Premiere as you always do; press Done with this short when you are, or just move on: Brew keeps your version on its own.
+**In the panel.** Press Choose your episode folder and pick the folder with the episode's camera and mic files. Brew reads it and shows what it is doing, with the time left. When the ready shorts appear, click one to put it in your timeline; or pick a beat, type a length if you want one, and press Make the cut. To find a moment you remember, type a few of its words into Search what was said and click the sentence; Whole beat puts that whole beat in your timeline. Cut in Premiere as you always do; press Done with this short when you are, or just move on: Brew keeps your version on its own.
 
 **Uninstall.** Click the cup in the menu bar and choose Uninstall Brew…: Brew moves itself to the Trash, takes its panel out of Premiere and forgets your Claude key. Uninstall and Remove Projects deletes its data folder too. If your Mac account isn't an administrator, Brew can't move itself: drag it from Applications to the Trash yourself.
 
-## Brew 0.6.3: notices
+## Brew 0.6.5: notices
 
 Brew's own code is Cozyred's. These other programs and libraries ship inside Brew.app, each under its own licence and each with its licence text beside it in the app (paths from Brew.app/Contents). None of them is under the GPL.
 
