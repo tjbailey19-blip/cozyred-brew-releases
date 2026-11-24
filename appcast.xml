@@ -3,25 +3,23 @@
   <channel>
     <title>Brew</title>
     <item>
-      <title>Brew 0.7.0</title>
-      <pubDate>Tue, 24 Nov 2026 16:14:16 GMT</pubDate>
-      <sparkle:version>734</sparkle:version>
-      <sparkle:shortVersionString>0.7.0</sparkle:shortVersionString>
+      <title>Brew 0.7.1</title>
+      <pubDate>Tue, 24 Nov 2026 23:45:52 GMT</pubDate>
+      <sparkle:version>760</sparkle:version>
+      <sparkle:shortVersionString>0.7.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<h2>Brew 0.7.0</h2>
+      <description><![CDATA[<h2>Brew 0.7.1</h2>
 <p>Brew turns the raw footage of a recorded conversation into shorts, cut most of the way, and puts them in your Premiere timeline for you to finish. In Brew's panel inside Premiere you choose the episode folder; Brew lines up the cameras and mics, listens to them, finds the conversations and makes ready shorts. Click one to put it in your timeline, or pick a beat and press Make the cut.</p>
 
 <h3>New in this version</h3>
-<p>Full episode: under Ready shorts, one row with the episode's length. Press Cut the full episode and the whole episode lands in your timeline as one sequence: the two-shot on one track, the close-ups on another only where they are up, each mic on its own track, your show's intro, end card and watermark in place, markers where the guest names a person, place, work or event, and a report beside the timeline saying what Brew removed (dead air and false starts only) and what it left to you. Done with this cut keeps your version of it as the final one.</p>
-<p>Your show, under Details: your show's name and four slots with a Choose button each: the intro clip, the end card, the watermark and the LUT. Brew copies each file into its own folder and places them on the full episode; the LUT you apply in Premiere yourself (select the camera clips, then Lumetri Color &gt; Basic Correction &gt; Input LUT).</p>
-<p>A short's captions now arrive as caption items on your sequence's captions track, one per line, so you edit the words in Premiere. When Premiere doesn't make the track of them, the panel says "Drag the captions from the Brew bin onto your timeline."</p>
+<p>Brew's panel has two tabs: Shorts, with the search, the ready shorts, the big ideas, the beats and Make the cut, and Full episode, with the episode's length, its chapters and beats, your show's intro, end card, watermark and LUT, and Cut the full episode. The panel has a new look: flat rows, a count beside each list, and one orange button on each tab. The cup at the top is blue while Brew works, green when Brew is ready and red when something stopped, and the thin line under it fills as Brew works.</p>
 
 <h3>What Brew needs</h3>
 <p>A Mac with Apple silicon, macOS 14 or later, Adobe Premiere Pro 25.6 or later, and 10 GB free. An internet connection the first time it opens (it downloads the transcription model once) and whenever it reads an episode with Claude.</p>
 
 <h3>Install</h3>
 <ol>
-<li>Download Brew-0.7.0.zip below and double-click it to unzip.</li>
+<li>Download Brew-0.7.1.zip below and double-click it to unzip.</li>
 <li>Drag Brew into your Applications folder and open it from there. macOS asks once whether to open an app downloaded from the internet. Brew has no window: a cup appears in the menu bar at the top right of your screen, and Brew's first screen opens in your browser.</li>
 <li>On that screen, paste the Claude key and the invite code you were sent, then press Keep.</li>
 <li>Open Premiere and a project, then Window &gt; UXP Plugins &gt; Brew. Press Choose your episode folder.</li>
@@ -36,7 +34,7 @@
 <h3>Uninstall</h3>
 <p>Click the cup in the menu bar and choose Uninstall Brew…: Brew moves itself to the Trash, takes its panel out of Premiere and forgets your Claude key. Uninstall and Remove Projects deletes its data folder too.</p>
 
-<h2>Brew 0.7.0: notices</h2>
+<h2>Brew 0.7.1: notices</h2>
 <p>Brew&#x27;s own code is Cozyred&#x27;s. These other programs and libraries ship inside Brew.app, each under its own licence and each with its licence text beside it in the app (paths from Brew.app/Contents). None of them is under the GPL.</p>
 <h3>FFmpeg 9.0.2, LGPL 2.1 or later</h3>
 <p>Resources/bin/ffmpeg and ffprobe, which Brew runs as separate programs. Built from FFmpeg&#x27;s own source with no GPL part (no --enable-gpl, no x264) and only macOS&#x27;s own frameworks. The source is the tarball Brew&#x27;s build pins: ffmpeg-9.0.2.tar.xz from https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz (SHA-256 8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e), configured with --disable-autodetect --enable-videotoolbox --enable-audiotoolbox --enable-zlib --enable-bzlib --disable-doc --disable-ffplay --disable-network --disable-debug. If you want that source and cannot download it there, open an issue at https://github.com/tjbailey19-blip/cozyred-brew-releases/issues and it will be sent to you, for three years from this release. Its licence texts are in Resources/licenses/FFmpeg (COPYING.LGPLv2.1, LICENSE.md).</p>
@@ -162,8 +160,8 @@
 <tr><td>yt-dlp</td><td>2026.10.21</td><td>Unlicense</td></tr>
 </table>
 ]]></description>
-      <enclosure url="https://github.com/tjbailey19-blip/cozyred-brew-releases/releases/download/v0.7.0/Brew-0.7.0.zip" length="536058410" type="application/octet-stream"
-        sparkle:edSignature="ZvqQmqSQANQs/JydrXYOPUAUrOWJfUM5E0SZkjslQkh23/cZU2ltmGkOechaYPMNcMdSLXuN8PukR8MJCfquDA=="/>
+      <enclosure url="https://github.com/tjbailey19-blip/cozyred-brew-releases/releases/download/v0.7.1/Brew-0.7.1.zip" length="536067512" type="application/octet-stream"
+        sparkle:edSignature="1IqRuep7kPyLcXvDz3jYmSXJdRY32CKud7YrsZP+Oi7Kwyx+UPHqXgO1AbhRr1oqZVhWe9QPsarHUVxioJ68CQ=="/>
     </item>
   </channel>
 </rss>
