@@ -3,23 +3,23 @@
   <channel>
     <title>Brew</title>
     <item>
-      <title>Brew 0.7.2</title>
-      <pubDate>Wed, 25 Nov 2026 20:09:48 GMT</pubDate>
-      <sparkle:version>824</sparkle:version>
-      <sparkle:shortVersionString>0.7.2</sparkle:shortVersionString>
+      <title>Brew 0.7.3</title>
+      <pubDate>Thu, 26 Nov 2026 04:35:52 GMT</pubDate>
+      <sparkle:version>868</sparkle:version>
+      <sparkle:shortVersionString>0.7.3</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<h2>Brew 0.7.2</h2>
+      <description><![CDATA[<h2>Brew 0.7.3</h2>
 <p>Brew turns the raw footage of a recorded conversation into shorts, cut most of the way, and puts them in your Premiere timeline for you to finish. In Brew's panel inside Premiere you choose the episode folder; Brew lines up the cameras and mics, listens to them, finds the conversations and makes ready shorts. Click one to put it in your timeline, or pick a beat and press Make the cut.</p>
 
 <h3>New in this version</h3>
-<p>In a full episode the camera moves to a person only when they plainly start talking, and stays put while two people talk at once. Brew cuts nothing from the full episode but what comes before the show opens and after it ends, and marks what it would have cut or changed on your timeline as markers (Dead air, Wide?, Restart, B-roll) for you to act on in Premiere. Your show under Details has a new field, Show opens with: type the words the host opens every episode with, and the full episode starts where the host first says them. Under Details, Share with Cozyred (off until you tick it) sends Cozyred your choices and the words kept or cut in your finished cuts, never video or audio, and keeps a copy of everything sent on your Mac. After Done with this cut, the Full episode tab asks how many hours the episode took you and whether anything was awkward; Skip is always there. Your show takes an intro clip or an end card from any folder: where Brew itself can't read the file, the panel copies it over, and a slot with no file shows Choose alone. Where Brew marks dead air and Wide? learns from the episodes you finish: once three are finished and hold enough of your removals, the markers follow what you actually remove, within fixed limits, and Brew still cuts none of them.</p>
+<p>Brew learns from every sequence in your project that uses the episode's footage, its own and the ones you make yourself, whether the panel is open or not: it reads your saved Premiere project on your Mac. Your captions, effects, markers, levels and transitions count, words and all. A camera clip or a mic drags out as far as its file goes, and on a full episode both mics now move with the two-shot. At a cut the next clip is in the way, so use a ripple trim there; the title, the intro and the end card are already as long as their files, and a camera that recorded in several files stops at the end of each. The watermark's size and corner are yours under Your show. Every cut lands with one Look clip at the top of its cameras, and with one of Brew's cuts open the panel shows a Look row under Done: click a name to put that look on the cut, or No look to take it off. The names are Premiere's own LUTs and any LUT file you have used; Brew remembers the last look you left on a show's cut and lands the show's next cut with it. You can still pick a LUT on the Look clip yourself in Lumetri Color, and Undo takes a click back.</p>
 
 <h3>What Brew needs</h3>
 <p>A Mac with Apple silicon, macOS 14 or later, Adobe Premiere Pro 25.6 or later, and 10 GB free. An internet connection the first time it opens (it downloads the transcription model once) and whenever it reads an episode with Claude.</p>
 
 <h3>Install</h3>
 <ol>
-<li>Download Brew-0.7.2.zip below and double-click it to unzip.</li>
+<li>Download Brew-0.7.3.zip below and double-click it to unzip.</li>
 <li>Drag Brew into your Applications folder and open it from there. macOS asks once whether to open an app downloaded from the internet. Brew has no window: a cup appears in the menu bar at the top right of your screen, and Brew's first screen opens in your browser.</li>
 <li>On that screen, paste the Claude key and the invite code you were sent, then press Keep.</li>
 <li>Open Premiere and a project, then Window &gt; UXP Plugins &gt; Brew. Press Choose your episode folder.</li>
@@ -29,12 +29,12 @@
 <p>Paste the Claude key and the invite code you were sent. Both came with your invite; paste each one whole. Brew keeps the key in your Mac's Keychain and uses it only for your own requests. If you have a Claude key of your own, it comes from console.anthropic.com (it starts with sk-ant-).</p>
 
 <h3>What leaves your Mac</h3>
-<p>Your footage, audio and frames never leave your Mac: only the words of the transcript go to Anthropic, under the key you were given. If you tick Share with Cozyred under Details (off until you do), Brew also sends Cozyred your choices, the words kept or cut and your answers on the card after Done, with your invite code, never video or audio. The whole list of what Brew sends and to whom is TRUST.md inside Brew.app, beside NOTICES.txt (in Applications, right-click Brew, Show Package Contents, then Contents, Resources).</p>
+<p>Your footage, audio and frames never leave your Mac: only the words of the transcript go to Anthropic, under the key you were given. If you tick Share with Cozyred under Details (off until you do, or until Cozyred's list names your invite code because you agreed in writing; you can untick it any time and it stays off), Brew also sends Cozyred your choices, the words kept or cut, your answers on the card after Done and what Brew reads from your Premiere projects (with the share on, every project on your Mac, read without changing it), with your invite code, never video or audio. The whole list of what Brew sends and to whom is TRUST.md inside Brew.app, beside NOTICES.txt (in Applications, right-click Brew, Show Package Contents, then Contents, Resources).</p>
 
 <h3>Uninstall</h3>
 <p>Click the cup in the menu bar and choose Uninstall Brew…: Brew moves itself to the Trash, takes its panel out of Premiere and forgets your Claude key. Uninstall and Remove Projects deletes its data folder too.</p>
 
-<h2>Brew 0.7.2: notices</h2>
+<h2>Brew 0.7.3: notices</h2>
 <p>Brew&#x27;s own code is Cozyred&#x27;s. These other programs and libraries ship inside Brew.app, each under its own licence and each with its licence text beside it in the app (paths from Brew.app/Contents). None of them is under the GPL.</p>
 <h3>FFmpeg 9.0.2, LGPL 2.1 or later</h3>
 <p>Resources/bin/ffmpeg and ffprobe, which Brew runs as separate programs. Built from FFmpeg&#x27;s own source with no GPL part (no --enable-gpl, no x264) and only macOS&#x27;s own frameworks. The source is the tarball Brew&#x27;s build pins: ffmpeg-9.0.2.tar.xz from https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz (SHA-256 8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e), configured with --disable-autodetect --enable-videotoolbox --enable-audiotoolbox --enable-zlib --enable-bzlib --disable-doc --disable-ffplay --disable-network --disable-debug. If you want that source and cannot download it there, open an issue at https://github.com/tjbailey19-blip/cozyred-brew-releases/issues and it will be sent to you, for three years from this release. Its licence texts are in Resources/licenses/FFmpeg (COPYING.LGPLv2.1, LICENSE.md).</p>
@@ -160,8 +160,8 @@
 <tr><td>yt-dlp</td><td>2026.10.21</td><td>Unlicense</td></tr>
 </table>
 ]]></description>
-      <enclosure url="https://github.com/tjbailey19-blip/cozyred-brew-releases/releases/download/v0.7.2/Brew-0.7.2.zip" length="536167208" type="application/octet-stream"
-        sparkle:edSignature="cJNaw8JdIwBir2+Q9+Ph4jSPKaz0ZpsjLEOs5Q7crOatvHt1A6HHEuMdOpktvUqtB0Q1p5T9l/E9yYF5XvHbCg=="/>
+      <enclosure url="https://github.com/tjbailey19-blip/cozyred-brew-releases/releases/download/v0.7.3/Brew-0.7.3.zip" length="536320296" type="application/octet-stream"
+        sparkle:edSignature="OOf+iST6iRlh+HW8mgwazuzpsVoYYffsWBIrOh4dZV5geq5FDD2x7ZpnDwlpEtbgbm++FyhAGQpAGZTTPmh1CQ=="/>
     </item>
   </channel>
 </rss>
