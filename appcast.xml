@@ -3,23 +3,23 @@
   <channel>
     <title>Brew</title>
     <item>
-      <title>Brew 0.7.3</title>
-      <pubDate>Thu, 26 Nov 2026 04:35:52 GMT</pubDate>
-      <sparkle:version>868</sparkle:version>
-      <sparkle:shortVersionString>0.7.3</sparkle:shortVersionString>
+      <title>Brew 0.7.4</title>
+      <pubDate>Thu, 26 Nov 2026 16:42:46 GMT</pubDate>
+      <sparkle:version>876</sparkle:version>
+      <sparkle:shortVersionString>0.7.4</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<h2>Brew 0.7.3</h2>
+      <description><![CDATA[<h2>Brew 0.7.4</h2>
 <p>Brew turns the raw footage of a recorded conversation into shorts, cut most of the way, and puts them in your Premiere timeline for you to finish. In Brew's panel inside Premiere you choose the episode folder; Brew lines up the cameras and mics, listens to them, finds the conversations and makes ready shorts. Click one to put it in your timeline, or pick a beat and press Make the cut.</p>
 
 <h3>New in this version</h3>
-<p>Brew learns from every sequence in your project that uses the episode's footage, its own and the ones you make yourself, whether the panel is open or not: it reads your saved Premiere project on your Mac. Your captions, effects, markers, levels and transitions count, words and all. A camera clip or a mic drags out as far as its file goes, and on a full episode both mics now move with the two-shot. At a cut the next clip is in the way, so use a ripple trim there; the title, the intro and the end card are already as long as their files, and a camera that recorded in several files stops at the end of each. The watermark's size and corner are yours under Your show. Every cut lands with one Look clip at the top of its cameras, and with one of Brew's cuts open the panel shows a Look row under Done: click a name to put that look on the cut, or No look to take it off. The names are Premiere's own LUTs and any LUT file you have used; Brew remembers the last look you left on a show's cut and lands the show's next cut with it. You can still pick a LUT on the Look clip yourself in Lumetri Color, and Undo takes a click back.</p>
+<p>Your look lands on every new cut. If you set your look as a LUT on the footage itself (Lumetri Color &gt; Settings &gt; Source Clip &gt; Input LUT), Brew reads it from your saved project and a new cut lands with it on the Look clip, once, by your file's own name. The Look row under Done is there the moment the cut lands: No look takes it off in one click and stays the show's choice, another name changes it, and Undo takes a click back. The look Brew puts on a cut from a LUT file stays on the cut when the file is moved or deleted.</p>
 
 <h3>What Brew needs</h3>
 <p>A Mac with Apple silicon, macOS 14 or later, Adobe Premiere Pro 25.6 or later, and 10 GB free. An internet connection the first time it opens (it downloads the transcription model once) and whenever it reads an episode with Claude.</p>
 
 <h3>Install</h3>
 <ol>
-<li>Download Brew-0.7.3.zip below and double-click it to unzip.</li>
+<li>Download Brew-0.7.4.zip below and double-click it to unzip.</li>
 <li>Drag Brew into your Applications folder and open it from there. macOS asks once whether to open an app downloaded from the internet. Brew has no window: a cup appears in the menu bar at the top right of your screen, and Brew's first screen opens in your browser.</li>
 <li>On that screen, paste the Claude key and the invite code you were sent, then press Keep.</li>
 <li>Open Premiere and a project, then Window &gt; UXP Plugins &gt; Brew. Press Choose your episode folder.</li>
@@ -34,7 +34,7 @@
 <h3>Uninstall</h3>
 <p>Click the cup in the menu bar and choose Uninstall Brew…: Brew moves itself to the Trash, takes its panel out of Premiere and forgets your Claude key. Uninstall and Remove Projects deletes its data folder too.</p>
 
-<h2>Brew 0.7.3: notices</h2>
+<h2>Brew 0.7.4: notices</h2>
 <p>Brew&#x27;s own code is Cozyred&#x27;s. These other programs and libraries ship inside Brew.app, each under its own licence and each with its licence text beside it in the app (paths from Brew.app/Contents). None of them is under the GPL.</p>
 <h3>FFmpeg 9.0.2, LGPL 2.1 or later</h3>
 <p>Resources/bin/ffmpeg and ffprobe, which Brew runs as separate programs. Built from FFmpeg&#x27;s own source with no GPL part (no --enable-gpl, no x264) and only macOS&#x27;s own frameworks. The source is the tarball Brew&#x27;s build pins: ffmpeg-9.0.2.tar.xz from https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz (SHA-256 8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e), configured with --disable-autodetect --enable-videotoolbox --enable-audiotoolbox --enable-zlib --enable-bzlib --disable-doc --disable-ffplay --disable-network --disable-debug. If you want that source and cannot download it there, open an issue at https://github.com/tjbailey19-blip/cozyred-brew-releases/issues and it will be sent to you, for three years from this release. Its licence texts are in Resources/licenses/FFmpeg (COPYING.LGPLv2.1, LICENSE.md).</p>
@@ -160,8 +160,8 @@
 <tr><td>yt-dlp</td><td>2026.10.21</td><td>Unlicense</td></tr>
 </table>
 ]]></description>
-      <enclosure url="https://github.com/tjbailey19-blip/cozyred-brew-releases/releases/download/v0.7.3/Brew-0.7.3.zip" length="536320296" type="application/octet-stream"
-        sparkle:edSignature="OOf+iST6iRlh+HW8mgwazuzpsVoYYffsWBIrOh4dZV5geq5FDD2x7ZpnDwlpEtbgbm++FyhAGQpAGZTTPmh1CQ=="/>
+      <enclosure url="https://github.com/tjbailey19-blip/cozyred-brew-releases/releases/download/v0.7.4/Brew-0.7.4.zip" length="536336657" type="application/octet-stream"
+        sparkle:edSignature="iwreWWMkc4PHkIryTEU8wyCfXdl9iKdOV8L+eYFQKLhlHWr7t6fOcFuIkZ8wOa6VYZKgFCY2z39Ny07c0841AQ=="/>
     </item>
   </channel>
 </rss>
